@@ -43,7 +43,7 @@ P&L per hour on 1 unit of spot notional is `spot return - perp return + funding 
 
 **Costs (assumed, not from the SOP tables):** spot 10 bps and perp 4.5 bps taker fees per trade (base tier, so conservative for a larger account only if VIP tiers are not available), plus 2 bps slippage. Opening or closing the hedge trades both legs. No borrow cost applies, because the long leg is spot.
 
-**Code:** `data.py`, `backtest.py`, `metrics.py`, `walkforward.py`, `scan_linked.py` (Study A), `basis.py` (Study B).
+**Code:** `core/data.py`, `core/backtest.py`, `core/metrics.py`, `studies/eth_btc/walkforward.py`, `studies/linked_pairs/scan_linked.py` (Study A), `studies/carry/basis.py` (Study B).
 
 ## 4. Experiments disclosed (s.4, s.7)
 
@@ -148,9 +148,9 @@ Report-only items: turnover is near zero for always-on (no switches) and 17 to 7
 ## 9. Reproducibility
 
 ```
-python scan_linked.py           # Study A (DEV only)
-python basis.py                 # Study B on DEV
-python basis.py --holdout       # Study B on HOLDOUT (run once)
+python -m studies.linked_pairs.scan_linked   # Study A (DEV only)
+python -m studies.carry.basis                # Study B on DEV
+python -m studies.carry.basis --holdout      # Study B on HOLDOUT (run once)
 ```
 
 Data is cached under `cache/` (parquet). Python deps are in `requirements.txt` plus `statsmodels` and `pyarrow`.

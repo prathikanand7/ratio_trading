@@ -14,8 +14,8 @@ import numpy as np
 import pandas as pd
 from statsmodels.tsa.stattools import coint
 
-from data import fetch_vision
-from walkforward import walk_forward
+from core.data import fetch_vision
+from studies.eth_btc.walkforward import walk_forward
 
 SYMBOLS = ["BTCUSDT", "ETHUSDT", "SOLUSDT", "BNBUSDT", "LINKUSDT",
            "AVAXUSDT", "LTCUSDT", "ADAUSDT", "XRPUSDT", "DOGEUSDT"]

@@ -16,7 +16,7 @@ import zipfile
 import numpy as np
 import pandas as pd
 
-from data import _parse_kline_zip, _months_back, KLINE_COLS
+from core.data import _parse_kline_zip, _months_back, KLINE_COLS
 
 
 def make_archive(n=48, with_header=False, unit="ms", start_ms=1_700_000_000_000):

@@ -21,11 +21,11 @@ import os
 import numpy as np
 import pandas as pd
 
-from data import load_pair
-from backtest import Params, run_backtest, trade_list, build_spread, estimate_beta
-from metrics import summarize, adf_test, half_life, fmt_report, sharpe
+from core.data import load_pair
+from core.backtest import Params, run_backtest, trade_list, build_spread, estimate_beta
+from core.metrics import summarize, adf_test, half_life, fmt_report, sharpe
 
-OUT_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "outputs")
+OUT_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), "outputs")
 
 
 def split(idx, frac=0.7):

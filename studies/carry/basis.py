@@ -30,7 +30,7 @@ import urllib.request
 import numpy as np
 import pandas as pd
 
-from data import fetch_vision, _months_back, _parse_kline_zip, CACHE_DIR
+from core.data import fetch_vision, _months_back, _parse_kline_zip, CACHE_DIR
 
 BASE = "https://data.binance.vision/data/futures/um/monthly"
 MONTHS = 72

@@ -21,30 +21,50 @@ separately:
 1. The spread is actually stationary (ADF test, train data only).
 2. The reversion is large enough and fast enough to survive fees and slippage.
 
-## Files
+## Layout
 
-| File | What it does |
-|---|---|
-| `data.py` | Pulls hourly klines from Binance Vision (bulk CSV archive), with the REST API and synthetic data as fallbacks. |
-| `test_data.py` | Tests for the Vision parser: header sniffing, timestamp units, bar spacing, inner join. |
-| `backtest.py` | Spread construction, z-score signal, position state machine, PnL with costs. |
-| `metrics.py` | Sharpe, max drawdown, hit rate, ADF stationarity test, OU half-life. |
-| `run_study.py` | The full study: split, test hypothesis, search on train, evaluate once on test. |
-| `validate.py` | Four checks on the engine itself. Run this first. |
+```
+core/                  shared engine
+  data.py              Binance Vision downloader (REST and synthetic fallbacks)
+  backtest.py          spread, z-score signal, position state machine, P&L with costs
+  metrics.py           Sharpe, drawdown, hit rate, ADF test, OU half-life
+studies/
+  eth_btc/             Report 1
+    run_study.py       70/30 split study, parameter search on train, cost sweep
+    walkforward.py     rolling walk-forward (walk_forward() is reused elsewhere)
+    scan_pairs.py      cointegration scan of 45 pairs
+  linked_pairs/        Report 2, study A
+    scan_linked.py     5 economically linked pairs fixed in advance, dev period only
+  carry/               Report 2, study B
+    basis.py           spot/perp funding carry; --holdout for the final test
+tests/
+  test_data.py         Vision parser tests
+  validate.py          checks of the engine on synthetic data
+reports/               SOP-format write-ups
+cache/                 downloaded data (git-ignored)
+outputs/               results of the ETH/BTC study
+```
 
 ## Running it
 
-```bash
-pip install pandas numpy statsmodels pyarrow
+Run everything from the repo root, as modules:
 
-python test_data.py                # check the data parser
-python validate.py                 # check the engine before trusting it
-python run_study.py --days 720     # the actual study
+```bash
+pip install -r requirements.txt statsmodels pyarrow
+
+python -m tests.test_data                      # check the data parser
+python -m tests.validate                       # check the engine before trusting it
+python -m studies.eth_btc.run_study --no-synthetic
+python -m studies.eth_btc.walkforward
+python -m studies.eth_btc.scan_pairs
+python -m studies.linked_pairs.scan_linked     # dev period only
+python -m studies.carry.basis                  # dev period
+python -m studies.carry.basis --holdout        # holdout, run once
 ```
 
 ## Where the data comes from
 
-`data.py` tries three sources in order and names whichever one it used.
+`core/data.py` tries three sources in order and names whichever one it used.
 
 **1. Binance Vision** (`data.binance.vision`) is the primary source and the
 one to use. It is a free static file host, no API key, no account, no rate
@@ -124,9 +144,9 @@ held = f["position"].shift(1)      # yesterday's decision earns today's return
 f["gross_ret"] = held * spread_ret
 ```
 
-`validate.py` tests this rather than asserting it.
+`tests/validate.py` tests this rather than asserting it.
 
-## What validate.py checks
+## What tests/validate.py checks
 
 **1. Spread construction preserves the signal.** On synthetic data built with a
 known OU residual of half-life 34.7 bars, a unit-beta spread recovers 32.7. A
@@ -159,7 +179,7 @@ to +0.83. On pure noise, a single run can reach +0.9 Sharpe by luck. That is
 the bar any real result has to clear, and it is why one backtest with a
 positive Sharpe proves nothing.
 
-`run_study.py` runs this null check against the actual test result and reports
+`studies/eth_btc/run_study.py` runs this null check against the actual test result and reports
 what fraction of noise runs beat it.
 
 ## Reading the output

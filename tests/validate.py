@@ -18,9 +18,9 @@ can be trusted.
 import numpy as np
 import pandas as pd
 
-from data import synthetic_pair
-from backtest import Params, build_spread, generate_positions, run_backtest, trade_list
-from metrics import summarize, sharpe, half_life, adf_test
+from core.data import synthetic_pair
+from core.backtest import Params, build_spread, generate_positions, run_backtest, trade_list
+from core.metrics import summarize, sharpe, half_life, adf_test
 
 
 def cheating_backtest(px_a, px_b, p):

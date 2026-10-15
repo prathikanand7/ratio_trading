@@ -27,7 +27,8 @@ import json
 
 BINANCE_KLINES = "https://api.binance.com/api/v3/klines"
 BINANCE_VISION = "https://data.binance.vision"
-CACHE_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "cache")
+REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+CACHE_DIR = os.path.join(REPO_ROOT, "cache")
 
 KLINE_COLS = [
     "open_time", "open", "high", "low", "close", "volume",
