@@ -8,10 +8,10 @@ record that is not one lucky split.
 import numpy as np
 import pandas as pd
 
-from data import load_pair
-from backtest import Params, run_backtest, trade_list, estimate_beta
-from metrics import summarize
-from run_study import search
+from core.data import load_pair
+from core.backtest import Params, run_backtest, trade_list, estimate_beta
+from core.metrics import summarize
+from studies.eth_btc.run_study import search
 
 TRAIN_BARS = 24 * 30 * 6   # ~6 months
 TEST_BARS = 24 * 30 * 2    # ~2 months

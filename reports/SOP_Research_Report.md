@@ -18,7 +18,7 @@
 ## 2. Data and point-in-time integrity (s.2)
 
 - **Source:** Binance Vision public monthly kline archives, 1h bars, 2024-10-01 to 2026-09-30 (17,520 bars per symbol, no gaps). This is **not** the Kairosys raw store; approval of the source is an open question for Kary.
-- **Timestamps:** close time, UTC. Binance switched from ms to microseconds partway through the archive; unit is detected by magnitude and covered by unit tests (`test_data.py`, all passing).
+- **Timestamps:** close time, UTC. Binance switched from ms to microseconds partway through the archive; unit is detected by magnitude and covered by unit tests (`tests/test_data.py`, all passing).
 - **Alignment:** inner join on timestamps; nothing was dropped.
 - **Look-ahead:** the signal at bar t uses data up to t; position is shifted one bar before earning returns. The hedge ratio is estimated on the training window only and then frozen.
 - **Survivorship:** the scan universe was chosen in 2026 from coins that exist today, so it is survivorship-biased. Not corrected.
@@ -31,7 +31,7 @@
 - Split: chronological 70/30 train/test (train to 2026-02-23, test 2026-02-24 to 2026-09-30).
 - Walk-forward: 6-month train, 2-month test, rolled by 2 months, giving 9 out-of-sample windows (2025-03-30 to 2026-09-30, about 18 months). Parameters and hedge ratio chosen on train only in each window.
 - Costs: 5 bps per leg per trade, swept 0 to 20 bps. **No slippage, borrow or funding costs modelled.**
-- Code: `data.py`, `backtest.py`, `metrics.py`, `run_study.py`, `walkforward.py`, `scan_pairs.py`.
+- Code: `core/data.py`, `core/backtest.py`, `core/metrics.py`, `studies/eth_btc/run_study.py`, `studies/eth_btc/walkforward.py`, `studies/eth_btc/scan_pairs.py`.
 
 ## 4. Experiments disclosed (s.4, s.7)
 
