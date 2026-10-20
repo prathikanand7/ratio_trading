@@ -1,0 +1,84 @@
+[14:28:31Z] AV crypto daily pull — 6 assets × 8 markets = 48 calls
+[14:28:31Z] Output: raw/Alpha vantage/crypto
+[14:28:31Z] Rate:   70 req/min  (0.857s/call)
+[14:28:32Z]   BTC/USD: +5,939 rows → file total 5,939
+[14:28:33Z]   BTC/EUR: +350 rows → file total 6,289
+[14:28:35Z]   BTC/GBP: +350 rows → file total 6,639
+[14:28:36Z]   AV Error: Invalid API call. Please retry or visit the documentation (https://www.alphavantage.co/documentation/) for DIGITAL_CURRENCY_DAILY.
+[14:28:36Z]   BTC/CNY: no data
+[14:28:37Z]   AV Error: Invalid API call. Please retry or visit the documentation (https://www.alphavantage.co/documentation/) for DIGITAL_CURRENCY_DAILY.
+[14:28:37Z]   BTC/JPY: no data
+[14:28:38Z]   AV Error: Invalid API call. Please retry or visit the documentation (https://www.alphavantage.co/documentation/) for DIGITAL_CURRENCY_DAILY.
+[14:28:38Z]   BTC/CHF: no data
+[14:28:39Z]   AV Error: Invalid API call. Please retry or visit the documentation (https://www.alphavantage.co/documentation/) for DIGITAL_CURRENCY_DAILY.
+[14:28:39Z]   BTC/CAD: no data
+[14:28:40Z]   AV Error: Invalid API call. Please retry or visit the documentation (https://www.alphavantage.co/documentation/) for DIGITAL_CURRENCY_DAILY.
+[14:28:40Z]   BTC/AUD: no data
+[14:28:41Z]   ETH/USD: +4,091 rows → file total 10,730
+[14:28:42Z]   ETH/EUR: +350 rows → file total 11,080
+[14:28:44Z]   ETH/GBP: +350 rows → file total 11,430
+[14:28:44Z]   AV Error: Invalid API call. Please retry or visit the documentation (https://www.alphavantage.co/documentation/) for DIGITAL_CURRENCY_DAILY.
+[14:28:44Z]   ETH/CNY: no data
+[14:28:45Z]   AV Error: Invalid API call. Please retry or visit the documentation (https://www.alphavantage.co/documentation/) for DIGITAL_CURRENCY_DAILY.
+[14:28:46Z]   ETH/JPY: no data
+[14:28:46Z]   AV Error: Invalid API call. Please retry or visit the documentation (https://www.alphavantage.co/documentation/) for DIGITAL_CURRENCY_DAILY.
+[14:28:46Z]   ETH/CHF: no data
+[14:28:47Z]   AV Error: Invalid API call. Please retry or visit the documentation (https://www.alphavantage.co/documentation/) for DIGITAL_CURRENCY_DAILY.
+[14:28:48Z]   ETH/CAD: no data
+[14:28:48Z]   AV Error: Invalid API call. Please retry or visit the documentation (https://www.alphavantage.co/documentation/) for DIGITAL_CURRENCY_DAILY.
+[14:28:48Z]   ETH/AUD: no data
+[14:28:50Z]   SOL/USD: +2,385 rows → file total 13,815
+[14:28:51Z]   SOL/EUR: +350 rows → file total 14,165
+[14:28:52Z]   SOL/GBP: +350 rows → file total 14,515
+[14:28:53Z]   AV Error: Invalid API call. Please retry or visit the documentation (https://www.alphavantage.co/documentation/) for DIGITAL_CURRENCY_DAILY.
+[14:28:53Z]   SOL/CNY: no data
+[14:28:54Z]   AV Error: Invalid API call. Please retry or visit the documentation (https://www.alphavantage.co/documentation/) for DIGITAL_CURRENCY_DAILY.
+[14:28:54Z]   SOL/JPY: no data
+[14:28:55Z]   AV Error: Invalid API call. Please retry or visit the documentation (https://www.alphavantage.co/documentation/) for DIGITAL_CURRENCY_DAILY.
+[14:28:55Z]   SOL/CHF: no data
+[14:28:56Z]   AV Error: Invalid API call. Please retry or visit the documentation (https://www.alphavantage.co/documentation/) for DIGITAL_CURRENCY_DAILY.
+[14:28:56Z]   SOL/CAD: no data
+[14:28:57Z]   AV Error: Invalid API call. Please retry or visit the documentation (https://www.alphavantage.co/documentation/) for DIGITAL_CURRENCY_DAILY.
+[14:28:57Z]   SOL/AUD: no data
+[14:28:59Z]   XRP/USD: +3,945 rows → file total 18,460
+[14:29:00Z]   XRP/EUR: +350 rows → file total 18,810
+[14:29:01Z]   XRP/GBP: +183 rows → file total 18,993
+[14:29:02Z]   AV Error: Invalid API call. Please retry or visit the documentation (https://www.alphavantage.co/documentation/) for DIGITAL_CURRENCY_DAILY.
+[14:29:02Z]   XRP/CNY: no data
+[14:29:03Z]   AV Error: Invalid API call. Please retry or visit the documentation (https://www.alphavantage.co/documentation/) for DIGITAL_CURRENCY_DAILY.
+[14:29:03Z]   XRP/JPY: no data
+[14:29:04Z]   AV Error: Invalid API call. Please retry or visit the documentation (https://www.alphavantage.co/documentation/) for DIGITAL_CURRENCY_DAILY.
+[14:29:04Z]   XRP/CHF: no data
+[14:29:05Z]   AV Error: Invalid API call. Please retry or visit the documentation (https://www.alphavantage.co/documentation/) for DIGITAL_CURRENCY_DAILY.
+[14:29:05Z]   XRP/CAD: no data
+[14:29:06Z]   AV Error: Invalid API call. Please retry or visit the documentation (https://www.alphavantage.co/documentation/) for DIGITAL_CURRENCY_DAILY.
+[14:29:06Z]   XRP/AUD: no data
+[14:29:08Z]   DOGE/USD: +3,945 rows → file total 22,938
+[14:29:09Z]   DOGE/EUR: +350 rows → file total 23,288
+[14:29:10Z]   DOGE/GBP: +350 rows → file total 23,638
+[14:29:11Z]   AV Error: Invalid API call. Please retry or visit the documentation (https://www.alphavantage.co/documentation/) for DIGITAL_CURRENCY_DAILY.
+[14:29:11Z]   DOGE/CNY: no data
+[14:29:12Z]   AV Error: Invalid API call. Please retry or visit the documentation (https://www.alphavantage.co/documentation/) for DIGITAL_CURRENCY_DAILY.
+[14:29:12Z]   DOGE/JPY: no data
+[14:29:13Z]   AV Error: Invalid API call. Please retry or visit the documentation (https://www.alphavantage.co/documentation/) for DIGITAL_CURRENCY_DAILY.
+[14:29:13Z]   DOGE/CHF: no data
+[14:29:14Z]   AV Error: Invalid API call. Please retry or visit the documentation (https://www.alphavantage.co/documentation/) for DIGITAL_CURRENCY_DAILY.
+[14:29:14Z]   DOGE/CAD: no data
+[14:29:15Z]   AV Error: Invalid API call. Please retry or visit the documentation (https://www.alphavantage.co/documentation/) for DIGITAL_CURRENCY_DAILY.
+[14:29:15Z]   DOGE/AUD: no data
+[14:29:17Z]   ZEC/USD: +3,642 rows → file total 27,280
+[14:29:18Z]   AV Error: Invalid API call. Please retry or visit the documentation (https://www.alphavantage.co/documentation/) for DIGITAL_CURRENCY_DAILY.
+[14:29:18Z]   ZEC/EUR: no data
+[14:29:19Z]   AV Error: Invalid API call. Please retry or visit the documentation (https://www.alphavantage.co/documentation/) for DIGITAL_CURRENCY_DAILY.
+[14:29:19Z]   ZEC/GBP: no data
+[14:29:20Z]   AV Error: Invalid API call. Please retry or visit the documentation (https://www.alphavantage.co/documentation/) for DIGITAL_CURRENCY_DAILY.
+[14:29:20Z]   ZEC/CNY: no data
+[14:29:21Z]   AV Error: Invalid API call. Please retry or visit the documentation (https://www.alphavantage.co/documentation/) for DIGITAL_CURRENCY_DAILY.
+[14:29:21Z]   ZEC/JPY: no data
+[14:29:22Z]   AV Error: Invalid API call. Please retry or visit the documentation (https://www.alphavantage.co/documentation/) for DIGITAL_CURRENCY_DAILY.
+[14:29:22Z]   ZEC/CHF: no data
+[14:29:23Z]   AV Error: Invalid API call. Please retry or visit the documentation (https://www.alphavantage.co/documentation/) for DIGITAL_CURRENCY_DAILY.
+[14:29:23Z]   ZEC/CAD: no data
+[14:29:24Z]   AV Error: Invalid API call. Please retry or visit the documentation (https://www.alphavantage.co/documentation/) for DIGITAL_CURRENCY_DAILY.
+[14:29:24Z]   ZEC/AUD: no data
+[14:29:24Z] Done. 16/48 pairs ok  (52.6s, 48 calls)

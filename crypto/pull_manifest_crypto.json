@@ -1,0 +1,202 @@
+{
+  "started_at": "2026-10-19T14:28:31.477743+00:00",
+  "completed_at": "2026-10-19T14:29:24.037656+00:00",
+  "elapsed_s": 52.6,
+  "total_calls": 48,
+  "pairs_ok": 16,
+  "pairs_total": 48,
+  "results": {
+    "BTC/USD": {
+      "status": "ok",
+      "rows": 5939
+    },
+    "BTC/EUR": {
+      "status": "ok",
+      "rows": 350
+    },
+    "BTC/GBP": {
+      "status": "ok",
+      "rows": 350
+    },
+    "BTC/CNY": {
+      "status": "no_data",
+      "rows": 0
+    },
+    "BTC/JPY": {
+      "status": "no_data",
+      "rows": 0
+    },
+    "BTC/CHF": {
+      "status": "no_data",
+      "rows": 0
+    },
+    "BTC/CAD": {
+      "status": "no_data",
+      "rows": 0
+    },
+    "BTC/AUD": {
+      "status": "no_data",
+      "rows": 0
+    },
+    "ETH/USD": {
+      "status": "ok",
+      "rows": 4091
+    },
+    "ETH/EUR": {
+      "status": "ok",
+      "rows": 350
+    },
+    "ETH/GBP": {
+      "status": "ok",
+      "rows": 350
+    },
+    "ETH/CNY": {
+      "status": "no_data",
+      "rows": 0
+    },
+    "ETH/JPY": {
+      "status": "no_data",
+      "rows": 0
+    },
+    "ETH/CHF": {
+      "status": "no_data",
+      "rows": 0
+    },
+    "ETH/CAD": {
+      "status": "no_data",
+      "rows": 0
+    },
+    "ETH/AUD": {
+      "status": "no_data",
+      "rows": 0
+    },
+    "SOL/USD": {
+      "status": "ok",
+      "rows": 2385
+    },
+    "SOL/EUR": {
+      "status": "ok",
+      "rows": 350
+    },
+    "SOL/GBP": {
+      "status": "ok",
+      "rows": 350
+    },
+    "SOL/CNY": {
+      "status": "no_data",
+      "rows": 0
+    },
+    "SOL/JPY": {
+      "status": "no_data",
+      "rows": 0
+    },
+    "SOL/CHF": {
+      "status": "no_data",
+      "rows": 0
+    },
+    "SOL/CAD": {
+      "status": "no_data",
+      "rows": 0
+    },
+    "SOL/AUD": {
+      "status": "no_data",
+      "rows": 0
+    },
+    "XRP/USD": {
+      "status": "ok",
+      "rows": 3945
+    },
+    "XRP/EUR": {
+      "status": "ok",
+      "rows": 350
+    },
+    "XRP/GBP": {
+      "status": "ok",
+      "rows": 183
+    },
+    "XRP/CNY": {
+      "status": "no_data",
+      "rows": 0
+    },
+    "XRP/JPY": {
+      "status": "no_data",
+      "rows": 0
+    },
+    "XRP/CHF": {
+      "status": "no_data",
+      "rows": 0
+    },
+    "XRP/CAD": {
+      "status": "no_data",
+      "rows": 0
+    },
+    "XRP/AUD": {
+      "status": "no_data",
+      "rows": 0
+    },
+    "DOGE/USD": {
+      "status": "ok",
+      "rows": 3945
+    },
+    "DOGE/EUR": {
+      "status": "ok",
+      "rows": 350
+    },
+    "DOGE/GBP": {
+      "status": "ok",
+      "rows": 350
+    },
+    "DOGE/CNY": {
+      "status": "no_data",
+      "rows": 0
+    },
+    "DOGE/JPY": {
+      "status": "no_data",
+      "rows": 0
+    },
+    "DOGE/CHF": {
+      "status": "no_data",
+      "rows": 0
+    },
+    "DOGE/CAD": {
+      "status": "no_data",
+      "rows": 0
+    },
+    "DOGE/AUD": {
+      "status": "no_data",
+      "rows": 0
+    },
+    "ZEC/USD": {
+      "status": "ok",
+      "rows": 3642
+    },
+    "ZEC/EUR": {
+      "status": "no_data",
+      "rows": 0
+    },
+    "ZEC/GBP": {
+      "status": "no_data",
+      "rows": 0
+    },
+    "ZEC/CNY": {
+      "status": "no_data",
+      "rows": 0
+    },
+    "ZEC/JPY": {
+      "status": "no_data",
+      "rows": 0
+    },
+    "ZEC/CHF": {
+      "status": "no_data",
+      "rows": 0
+    },
+    "ZEC/CAD": {
+      "status": "no_data",
+      "rows": 0
+    },
+    "ZEC/AUD": {
+      "status": "no_data",
+      "rows": 0
+    }
+  }
+}

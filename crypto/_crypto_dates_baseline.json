@@ -1,0 +1,26 @@
+{
+  "BTC": {
+    "latest_date": "2026-10-19",
+    "unchanged_since": "2026-10-19"
+  },
+  "ETH": {
+    "latest_date": "2026-10-19",
+    "unchanged_since": "2026-10-19"
+  },
+  "SOL": {
+    "latest_date": "2026-10-19",
+    "unchanged_since": "2026-10-19"
+  },
+  "XRP": {
+    "latest_date": "2026-10-19",
+    "unchanged_since": "2026-10-19"
+  },
+  "DOGE": {
+    "latest_date": "2026-10-19",
+    "unchanged_since": "2026-10-19"
+  },
+  "ZEC": {
+    "latest_date": "2026-10-19",
+    "unchanged_since": "2026-10-19"
+  }
+}
